@@ -1,0 +1,32 @@
+# ==============================================================================
+# @file .dockerignore
+# @description 根目錄 Docker 構建忽略清單 / Root Docker build ignore list
+# ==============================================================================
+
+# 依賴目錄 / Dependencies
+**/node_modules/
+**/.pnpm-store/
+
+# 編譯產物臨時檔 (保留 jar 與 dist)
+backend/target/*
+!backend/target/*.jar
+
+# 開發與文檔
+devlog/
+需求/
+docs/
+apk/
+app_screenshots/
+mobile-app/
+
+# 版本控制與 IDE
+.git/
+.github/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# 敏感文件
+.env*.local
